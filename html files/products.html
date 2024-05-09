@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <title>Digi Kala</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="/java script files/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="/css files/style.css" />
+  </head>
+
+  <body>
+    <!-- کل هدر بالا  -->
+    <header class="bg-white">
+      <nav class="navbar navbar-expand-sm nav-fixed">
+        <div class="container">
+          <a class="navbar-brand" href="#">ماهی شاپ</a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0 navhover">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="../html files/digikala.html"
+                  aria-current="page"
+                  >خانه <span class="visually-hidden">(current)</span></a
+                >
+              </li>
+              <li class="nav-item mt-sm-2">
+                دسته‌بندی
+                <ul class="dropdown dropdown-menu text-center">
+                  <li class="nav-item">
+                    <a
+                      class="dropdown-item"
+                      href="../html files/listproducts.html"
+                      >کیف</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="dropdown-item"
+                      href="../html files/listproducts.html"
+                      >کفش</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="dropdown-item"
+                      href="../html files/listproducts.html"
+                      >لباس</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="dropdown-item"
+                      href="../html files/listproducts.html"
+                      >کت</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="dropdown-item"
+                      href="../html files/listproducts.html"
+                      >کت</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="dropdown-item"
+                      href="../html files/listproducts.html"
+                      >کلاه</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="dropdown-item"
+                      href="../html files/listproducts.html"
+                      >آرایشی</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html files/aboutUs.html"
+                  >درباره ما</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./loginnum.html">ورود</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html files/sabadKharid.html"
+                  >سبد خرید</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- ناوبار سرچ -->
+      <nav class="py-2 py-sm-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+              <form class="d-flex my-0 my-lg-0 mx-5">
+                <input
+                  class="form-control focus-ring focus-ring-danger me-sm-2"
+                  type="text"
+                  placeholder="Search"
+                />
+                <button
+                  class="me-1 ms-1 btn btn-outline-danger my-2 my-sm-0"
+                  type="submit"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="col-lg-3"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="bg-danger mt-5 p-1 p-sm-5">
+        <div class="bg-white rounded container p-2 mt-2">
+          <div class="row m-1 gx-4">
+            <div class="col-lg-6 text-center">
+              <div class="productdiv single-product">
+                <div class="mainimage"></div>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center">
+              <h3 class="m-4">محصول شماره یک</h3>
+              <h5 class="m-4">توضیحات تکمیلی</h5>
+              <ul>
+                <li class="m-2">
+                  <span class="ms-2">اندازه : </span>
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="options-base"
+                    id="option5"
+                    autocomplete="off"
+                    checked
+                  />
+                  <label class="btn text-danger" for="option5">بزرگ</label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="options-base"
+                    id="option6"
+                    autocomplete="off"
+                  />
+                  <label class="btn text-danger" for="option6">کوچک</label>
+                </li>
+                <li class="m-2">کد محصول : 25685</li>
+                <li class="m-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  molestias molestiae labore, quos et magnam consequuntur vel
+                  tempora provident. Optio eligendi sint ad soluta corporis nam
+                  ullam repellendus accusamus quis.
+                </li>
+              </ul>
+              <h4 class="m-4">قیمت : 1,000,000 تومان</h4>
+              <div class="d-flex justify-content-center align-items-center m-4">
+                <span>رنگ های موجود</span>
+                <div class="colors">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <button class="btn btn-danger">اضافه کردن به سبد خرید</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section-products">
+        <div class="container">
+          <!-- متن بالاش  -->
+          <div class="row justify-content-center text-center">
+            <div class="col-md-8 col-lg-6">
+              <div class="head">
+                <h2>محصولات پرطرفدار</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Single Product -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div id="product-1" class="single-product">
+                <div class="part-1">
+                  <ul>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-shopping-cart">xl</i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-heart">l</i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="./products.html"><i class="fas fa-plus">m</i></a>
+                    </li>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-expand">s</i></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="part-2">
+                  <h3 class="product-title">لباس سمت راست</h3>
+                  <h4 class="product-old-price">700,000 تومان</h4>
+                  <h4 class="product-price">490,000 تومان</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Single Product -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div id="product-2" class="single-product">
+                <div class="part-1">
+                  <span class="discount">15% off</span>
+                  <ul>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-shopping-cart">xl</i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-heart">l</i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="./products.html"><i class="fas fa-plus">m</i></a>
+                    </li>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-expand">s</i></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="part-2">
+                  <h3 class="product-title">لباس دوم</h3>
+                  <h4 class="product-price">400,000 تومان</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Single Product -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div id="product-3" class="single-product">
+                <div class="part-1">
+                  <ul>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-shopping-cart">xl</i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-heart">l</i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="./products.html"><i class="fas fa-plus">m</i></a>
+                    </li>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-expand">s</i></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="part-2">
+                  <h3 class="product-title">لباس جینگولی</h3>
+                  <h4 class="product-old-price">700,000 تومان</h4>
+                  <h4 class="product-price">490,000 تومان</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Single Product -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div id="product-4" class="single-product">
+                <div class="part-1">
+                  <span class="new">new</span>
+                  <ul>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-shopping-cart">xl</i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-heart">l</i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="./products.html"><i class="fas fa-plus">m</i></a>
+                    </li>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-expand">s</i></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="part-2">
+                  <h3 class="product-title">محصول سوم</h3>
+                  <h4 class="product-price">490,000 تومان</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Single Product -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div id="product-5" class="single-product">
+                <div class="part-1">
+                  <ul>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-shopping-cart">xl</i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-heart">l</i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="./products.html"><i class="fas fa-plus">m</i></a>
+                    </li>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-expand">s</i></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="part-2">
+                  <h3 class="product-title">ی محصول دیگه</h3>
+                  <h4 class="product-old-price">700,000 تومان</h4>
+                  <h4 class="product-price">490,000 تومان</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Single Product -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div id="product-6" class="single-product">
+                <div class="part-1">
+                  <span class="discount">15% off</span>
+                  <ul>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-shopping-cart">xl</i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-heart">l</i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="./products.html"><i class="fas fa-plus">m</i></a>
+                    </li>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-expand">s</i></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="part-2">
+                  <h3 class="product-title">محصول چهارم</h3>
+                  <h4 class="product-price">490,000 تومان</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Single Product -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div id="product-7" class="single-product">
+                <div class="part-1">
+                  <ul>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-shopping-cart">xl</i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-heart">l</i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="./products.html"><i class="fas fa-plus">m</i></a>
+                    </li>
+                    <li>
+                      <a href="./products.html"
+                        ><i class="fas fa-expand">s</i></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="part-2">
+                  <h3 class="product-title">محصول جدید</h3>
+                  <h4 class="product-old-price">700,000 تومان</h4>
+                  <h4 class="product-price">490,000 تومان</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Single Product -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div id="product-8" class="single-product">
+                <div class="part-1">
+                  <span class="new">new</span>
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fas fa-shopping-cart">xl</i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fas fa-heart">l</i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fas fa-plus">m</i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fas fa-expand">s</i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="part-2">
+                  <h3 class="product-title">محصول جدید</h3>
+                  <h4 class="product-price">700,000 تومان</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        color: #343a40;
+      }
+
+      a,
+      a:hover {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .section-products {
+        padding: 80px 0 54px;
+      }
+
+      .section-products .head {
+        margin-bottom: 50px;
+      }
+
+      .section-products .head h2 {
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: #343a40;
+      }
+
+      .section-products .single-product {
+        margin-bottom: 26px;
+      }
+
+      .section-products .single-product .part-1 {
+        position: relative;
+        height: 290px;
+        max-height: 290px;
+        margin-bottom: 20px;
+        overflow: hidden;
+      }
+
+      .section-products .single-product .part-1::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: all 0.3s;
+      }
+
+      .section-products .single-product:hover .part-1::before {
+        transform: scale(1.2, 1.2) rotate(5deg);
+      }
+
+      .section-products #product-1 .part-1::before {
+        background: url("/photos/carosusel/carosel1image1.jpg") no-repeat center;
+        background-size: cover;
+        transition: all 0.3s;
+      }
+
+      .section-products #product-2 .part-1::before {
+        background: url("/photos/carosusel/carosel1image2.jpg") no-repeat center;
+        background-size: cover;
+      }
+
+      .section-products #product-3 .part-1::before {
+        background: url("/photos/carosusel/carosel1image3.jpg") no-repeat center;
+        background-size: cover;
+      }
+
+      .section-products #product-4 .part-1::before {
+        background: url("/photos/carosusel/carosel2image1.jpg") no-repeat center;
+        background-size: cover;
+      }
+      .section-products #product-5 .part-1::before {
+        background: url("/photos/carosusel/carosel2image2.jpg") no-repeat center;
+        background-size: cover;
+      }
+      .section-products #product-6 .part-1::before {
+        background: url("/photos/carosusel/carosel2image3.jpg") no-repeat center;
+        background-size: cover;
+      }
+      .section-products #product-7 .part-1::before {
+        background: url("/photos/carosusel/carosel3image1.jpg") no-repeat center;
+        background-size: cover;
+      }
+      .section-products #product-8 .part-1::before {
+        background: url("/photos/carosusel/carosel2image2.jpg") no-repeat center;
+        background-size: cover;
+      }
+
+      .section-products .single-product .part-1 .discount,
+      .section-products .single-product .part-1 .new {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        color: #ffffff;
+        background-color: #dc3545;
+        padding: 2px 8px;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+      }
+
+      .section-products .single-product .part-1 .new {
+        left: 0;
+        background-color: #343a40;
+      }
+
+      .section-products .single-product .part-1 ul {
+        position: absolute;
+        bottom: -41px;
+        left: 20px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        opacity: 0;
+        transition: bottom 0.5s, opacity 0.5s;
+      }
+
+      .section-products .single-product:hover .part-1 ul {
+        bottom: 30px;
+        opacity: 1;
+      }
+
+      .section-products .single-product .part-1 ul li {
+        display: inline-block;
+        margin-right: 4px;
+      }
+
+      .section-products .single-product .part-1 ul li a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #ffffff;
+        color: #343a40;
+        text-align: center;
+        box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+        transition: color 0.2s;
+      }
+
+      .section-products .single-product .part-1 ul li a:hover {
+        color: #dc3545;
+      }
+
+      .section-products .single-product .part-2 .product-title {
+        font-size: 1rem;
+      }
+
+      .section-products .single-product .part-2 h4 {
+        display: inline-block;
+        font-size: 1rem;
+      }
+
+      .section-products .single-product .part-2 .product-old-price {
+        position: relative;
+        padding: 0 7px;
+        margin-right: 2px;
+        opacity: 0.6;
+      }
+
+      .section-products .single-product .part-2 .product-old-price::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #343a40;
+        transform: translateY(-50%);
+      }
+    </style>
+
+    <!-- فوتر -->
+    <div class="overflowy-hidden" style="background-color: #f8d7d8">
+      <footer>
+        <!-- لوگو و اسم بالای فوتر -->
+        <nav class="navbar mx-5">
+          <a class="navbar-brand" href="../html files/digikala.html">
+            <img
+              src="/photos/logo.png"
+              alt="Logo"
+              width="50"
+              height="50"
+              class="d-inline-block"
+            />
+            Mahi Shop
+          </a>
+          <form class="d-flex my-2 my-lg-0" dir="ltr">
+            <div class="input-group">
+              <button
+                class="btn btn-outline-danger"
+                type="button"
+                id="button-addon1"
+              >
+                خبرنامه
+              </button>
+              <input
+                type="email"
+                class="form-control border border-danger focus-ring focus-ring-danger"
+                id="emailkhabar"
+                placeholder=" ایمیل خود را وارد کنید"
+              />
+            </div>
+          </form>
+        </nav>
+        <!-- لینک های سایت -->
+        <div class="container text-center">
+          <div class="row row-cols-1 row-cols-lg-4 m-2">
+            <div class="col-12 col-lg-4 p-4 container">
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  ><b>راهنمای خرید</b></a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >نحوه ثبت سفارش</a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none">
+                  رویه ارسال سفارش</a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >شیوه ی پرداخت</a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 p-4 container">
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  ><b>خدمات مشتریان</b></a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >پاسخ به پرسش های متداول</a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >رویه بازگرداندن کالا</a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >شرایط استفاده</a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >حریم خصوصی</a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 p-4 container">
+              <div class="row m-3">
+                <a href="#" class="text-reset text-decoration-none"
+                  ><b>همراه با ما</b></a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >همکاری در فروش</a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >فرصت های شغلی</a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >درباره ی ما</a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >تماس با ما</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- پیشنهاد های ویژه کارتی -->
+        <div class="p-2 hide-on-mobile" style="background-color: #343a40">
+          <div class="containerone text-center mx-auto">
+            <div class="cardone">
+              <a href="#" class="text-reset text-decoration-none">
+                <h2>ضمانت جنس</h2>
+              </a>
+            </div>
+
+            <div class="cardone">
+              <a href="#" class="text-reset text-decoration-none"
+                ><h2>پرداخت قسطی</h2></a
+              >
+            </div>
+
+            <div class="cardone">
+              <a href="#" class="text-reset text-decoration-none"
+                ><h2>ارسال رایگان</h2></a
+              >
+            </div>
+
+            <div class="cardone">
+              <a href="#" class="text-reset text-decoration-none"
+                ><h2>پرداخت درب‌منزل</h2></a
+              >
+            </div>
+
+            <div class="cardone">
+              <a href="#" class="text-reset text-decoration-none"
+                ><h2>بازگشت‌کالا بدون شرط</h2></a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

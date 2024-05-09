@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <title>Digi Kala</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="/java script files/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="/css files/style.css" />
+    <link
+      href="../photos/bootstrap-icons-1.11.3/bootstrap-icons-1.11.3/bootstrap-icons.min.css "
+      rel="stylesheet"
+    />
+  </head>
+
+  <body style="background-color: #f3f5f6; overflow-x: hidden">
+    <!-- کل هدر بالا  -->
+    <header class="bg-white">
+      <nav class="navbar navbar-expand-sm nav-fixed">
+        <div class="container">
+          <a class="navbar-brand" href="#">ماهی شاپ</a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0 navhover">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="../html files/digikala.html"
+                  aria-current="page"
+                  >خانه <span class="visually-hidden">(current)</span></a
+                >
+              </li>
+              <li class="nav-item mt-sm-2">
+                دسته‌بندی
+                <ul class="dropdown dropdown-menu text-center">
+                  <li class="nav-item">
+                    <a
+                      class="dropdown-item"
+                      href="../html files/listproducts.html"
+                      >کیف</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="dropdown-item"
+                      href="../html files/listproducts.html"
+                      >کفش</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="dropdown-item"
+                      href="../html files/listproducts.html"
+                      >لباس</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="dropdown-item"
+                      href="../html files/listproducts.html"
+                      >کت</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="dropdown-item"
+                      href="../html files/listproducts.html"
+                      >کت</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="dropdown-item"
+                      href="../html files/listproducts.html"
+                      >کلاه</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="dropdown-item"
+                      href="../html files/listproducts.html"
+                      >آرایشی</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html files/aboutUs.html"
+                  >درباره ما</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./loginnum.html">ورود</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html files/sabadKharid.html"
+                  >سبد خرید</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- ناوبار سرچ -->
+      <nav class="py-2 py-sm-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+              <form class="d-flex my-0 my-lg-0 mx-5">
+                <input
+                  class="form-control focus-ring focus-ring-danger me-sm-2"
+                  type="text"
+                  placeholder="Search"
+                />
+                <button
+                  class="me-1 ms-1 btn btn-outline-danger my-2 my-sm-0"
+                  type="submit"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="col-lg-3"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- صفحه ی سبد خرید -->
+    <div class="container gx-5">
+      <div class="row">
+        <!-- جمع محصولات -->
+        <div class="col-11 col-lg-4 card text-center m-3">
+          <div class="card-body">
+            <div class="card-header border text-center">سبد خرید شما</div>
+
+            <div class="container">
+              <div class="rounded my-5 row">
+                <div class="col-6 text-end">قیمت محصولات</div>
+                <div class="col-6 text-start">11.000 تومان</div>
+              </div>
+              <div class="rounded my-5 justify-content-between row">
+                <div class="col-6 text-end">تخفیف</div>
+                <div class="col-6 text-start">11.000 تومان</div>
+              </div>
+              <div class="rounded my-5 justify-content-between row">
+                <div class="col-6 text-end">قیمت تمام شده</div>
+                <div class="col-6 text-start">11.000 تومان</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- سبد محصولات -->
+        <div class="col-11 col-lg-7 card text-center m-3">
+          <div class="card-body">
+            <div class="card-header border mb-4">سبد خرید شما</div>
+
+            <ul class="list-group-flush text-center align-items-center">
+              <!-- محصول اول -->
+              <li class="list-group-item">
+                <!-- کل کارت -->
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row g-0">
+                    <!-- تصویر -->
+                    <div class="col-12 col-md-4">
+                      <img
+                        src="../photos/cards/تیشرت.png"
+                        class="img-fluid rounded-start"
+                        alt="محصول اول"
+                      />
+                    </div>
+                    <!-- توضیحات -->
+                    <div class="col-12 col-md-8">
+                      <div class="card-body">
+                        <ul class="card-text m-0 m-sm-2 text-end">
+                          <li><h5 class="card-title">تیشرت مدل باران</h5></li>
+                          <li>تیشرت مردانه</li>
+                          <li>رنگ سفید</li>
+                          <li>قیمت : 890000 تومان</li>
+                        </ul>
+                        <p class="card-text text-start">
+                          <a href="#" class="btn btn-danger">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-trash"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"
+                              />
+                              <path
+                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"
+                              />
+                            </svg>
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- محصول دوم  -->
+              <li class="list-group-item">
+                <!-- کل کارت -->
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row g-0">
+                    <!-- تصویر -->
+                    <div class="col-12 col-md-4">
+                      <img
+                        src="../photos/cards/لباس.png"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                    <!-- توضیحات -->
+                    <div class="col-12 col-md-8">
+                      <div class="card-body">
+                        <ul class="card-text m-0 m-sm-2 text-end">
+                          <li><h5 class="card-title">کت کودک بنفشه</h5></li>
+                          <li>کت کودکانه</li>
+                          <li>رنگ بنفش</li>
+                          <li>قیمت : 890000 تومان</li>
+                        </ul>
+                        <p class="card-text text-start">
+                          <a href="#" class="btn btn-danger">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-trash"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"
+                              />
+                              <path
+                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"
+                              />
+                            </svg>
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- محصول سوم -->
+              <li class="list-group-item">
+                <!-- کل کارت -->
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row g-0">
+                    <!-- تصویر -->
+                    <div class="col-12 col-md-4">
+                      <img
+                        src="../photos/cards/مانتو.png"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                    <!-- توضیحات -->
+                    <div class="col-12 col-md-8">
+                      <div class="card-body">
+                        <ul class="card-text m-0 m-sm-2 text-end">
+                          <li><h5 class="card-title">مانتو مدل پریا</h5></li>
+                          <li>مانتو زنانه</li>
+                          <li>رنگ قهوه ای</li>
+                          <li>قیمت : 890000 تومان</li>
+                        </ul>
+                        <p class="card-text text-start">
+                          <a href="#" class="btn btn-danger">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-trash"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"
+                              />
+                              <path
+                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"
+                              />
+                            </svg>
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-danger mb-4 mx-4">اتمام خرید</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- فوتر -->
+    <div class="overflowy-hidden" style="background-color: #f8d7d8">
+      <footer>
+        <!-- لوگو و اسم بالای فوتر -->
+        <nav class="navbar mx-5">
+          <a class="navbar-brand" href="../html files/digikala.html">
+            <img
+              src="/photos/logo.png"
+              alt="Logo"
+              width="50"
+              height="50"
+              class="d-inline-block"
+            />
+            Mahi Shop
+          </a>
+          <form class="d-flex my-2 my-lg-0" dir="ltr">
+            <div class="input-group">
+              <button
+                class="btn btn-outline-danger"
+                type="button"
+                id="button-addon1"
+              >
+                خبرنامه
+              </button>
+              <input
+                type="email"
+                class="form-control border border-danger focus-ring focus-ring-danger"
+                id="emailkhabar"
+                placeholder=" ایمیل خود را وارد کنید"
+              />
+            </div>
+          </form>
+        </nav>
+        <!-- لینک های سایت -->
+        <div class="container text-center">
+          <div class="row row-cols-1 row-cols-lg-4 m-2">
+            <div class="col-12 col-lg-4 p-4 container">
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  ><b>راهنمای خرید</b></a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >نحوه ثبت سفارش</a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none">
+                  رویه ارسال سفارش</a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >شیوه ی پرداخت</a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 p-4 container">
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  ><b>خدمات مشتریان</b></a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >پاسخ به پرسش های متداول</a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >رویه بازگرداندن کالا</a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >شرایط استفاده</a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >حریم خصوصی</a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 p-4 container">
+              <div class="row m-3">
+                <a href="#" class="text-reset text-decoration-none"
+                  ><b>همراه با ما</b></a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >همکاری در فروش</a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >فرصت های شغلی</a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >درباره ی ما</a
+                >
+              </div>
+              <div class="row m-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >تماس با ما</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- پیشنهاد های ویژه کارتی -->
+        <div class="p-2 hide-on-mobile" style="background-color: #343a40">
+          <div class="containerone text-center mx-auto">
+            <div class="cardone">
+              <a href="#" class="text-reset text-decoration-none">
+                <h2>ضمانت جنس</h2>
+              </a>
+            </div>
+
+            <div class="cardone">
+              <a href="#" class="text-reset text-decoration-none"
+                ><h2>پرداخت قسطی</h2></a
+              >
+            </div>
+
+            <div class="cardone">
+              <a href="#" class="text-reset text-decoration-none"
+                ><h2>ارسال رایگان</h2></a
+              >
+            </div>
+
+            <div class="cardone">
+              <a href="#" class="text-reset text-decoration-none"
+                ><h2>پرداخت درب‌منزل</h2></a
+              >
+            </div>
+
+            <div class="cardone">
+              <a href="#" class="text-reset text-decoration-none"
+                ><h2>بازگشت‌کالا بدون شرط</h2></a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

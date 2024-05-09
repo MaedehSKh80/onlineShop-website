@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "Pelak";
+  src: url("../fonts/PelakFA-light.eot");
+  src: url("../fonts/PelakFA-light.eot?#iefix") format(embedded-opentype),
+    url("/fonts/PelakFA-light.ttf") format("truetype"),
+    url("/fonts/PelakFA-light.woff") format("woff"),
+    url("/fonts/PelakFA-light.woff2") format("woff2");
+}
+
+body {
+  font-family: "Pelak" !important;
+}
+
+.hover {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+.hover:hover {
+  transform: scale(1.1);
+}
+
+.containerone,
+.cardone {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+.containerone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.containerone .cardone {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  height: 240px;
+  justify-content: center;
+  margin: 2rem 10px;
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+  width: 180px;
+}
+
+.containerone:hover .cardone,
+.containerone:focus .cardone,
+.containerone:active .cardone {
+  transform: perspective(500px) rotateY(-30deg);
+}
+
+.containerone .cardone:hover,
+.containerone .cardone:focus,
+.containerone .cardone:active {
+  transform: perspective(500px) rotateY(0);
+}
+
+.containerone .cardone:hover ~ .cardone,
+.containerone .cardone:focus ~ .cardone,
+.containerone .cardone:active ~ .cardone {
+  transform: perspective(500px) rotateY(30deg);
+}
+
+/* تغیرات توی متن های وسظ کارت  اعمال میشه */
+.containerone .cardone h2 {
+  background-color: #dc3545;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 1rem;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  transition: box-shadow 0.5s ease;
+  width: 100px;
+}
+/* تغیرات توی دایره ای که متن توشه اعمال میشه */
+.containerone .cardone:hover h2,
+.containerone .cardone:focus h2,
+.containerone .cardone:active h2 {
+  background-color: #ffffff;
+  box-shadow: 0 0 0 150px #f8d7d8;
+  color: #343a40;
+}
+
+/* سبک‌دهی به منوی ناوبری */
+.navhover {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navhover li {
+  display: inline-block;
+  margin-right: 15px;
+  position: relative;
+}
+.navhover li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding: 10px;
+}
+.navhover li:hover ul {
+  display: block;
+}
+.navhover li ul li {
+  display: block;
+  margin: 5px 0;
+}
+.navhover {
+  font-size-adjust: 0.7;
+}
+
+/* استایل دهی به تصویر ثابت سایت */
+.fixed-image {
+  width: 100%;
+  height: 300px;
+  background-image: url("../photos/cart_8.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.mobile-text {
+  color: #989696b8;
+  font-size: 15px;
+}
+
+/* برای صفحه ی محصوله، رنگ های مورد نظر رو نشون میده */
+.colors {
+  display: flex;
+  margin-top: 2px;
+}
+li {
+  list-style-type: none;
+}
+
+.colors span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  margin-right: 6px;
+}
+
+.colors span:nth-child(1) {
+  background-color: red;
+}
+
+.colors span:nth-child(2) {
+  background-color: blue;
+}
+
+.colors span:nth-child(3) {
+  background-color: yellow;
+}
+
+.colors span:nth-child(4) {
+  background-color: purple;
+}
+
+/* صفحه محصول قسمت عکس محصول */
+.mainimage {
+  position: absolute;
+  z-index: 400;
+  /* Ensure this value is higher than the z-index (if any) of the `bg-white` div */
+  height: max-content;
+}
+
+.productdiv .mainimage {
+  position: relative;
+  height: 500px;
+  max-height: max-content;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.productdiv .mainimage::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.productdiv:hover .mainimage::before {
+  transform: scale(1.2, 1.2) rotate(5deg);
+}
+
+.productdiv .mainimage::before {
+  background: url("../photos/cards/تیشرت.png") no-repeat center;
+  background-size: cover;
+  transition: all 0.3s;
+}
+
+/* هیدن شدن فوتر کارتی در حالت موبایل */
+@media only screen and (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
